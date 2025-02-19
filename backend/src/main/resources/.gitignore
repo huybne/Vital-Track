@@ -1,0 +1,8 @@
+# Bỏ qua tệp application.properties
+application.properties
+
+# Bỏ qua tệp Firebase Admin SDK JSON
+vitaltrack-92b70-firebase-adminsdk-zdri6-345634489c.json
+
+# Bỏ qua tệp .env
+.env

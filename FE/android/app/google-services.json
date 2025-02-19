@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "118842574835",
+    "firebase_url": "https://vitaltrack-92b70-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "vitaltrack-92b70",
+    "storage_bucket": "vitaltrack-92b70.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118842574835:android:e216cb9007f94bde46f486",
+        "android_client_info": {
+          "package_name": "com.vitaltrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5qKbUFok6WSDdb9MHxwXa1MqjEkBvyBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

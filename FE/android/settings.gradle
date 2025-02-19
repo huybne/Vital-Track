@@ -1,0 +1,38 @@
+pluginManagement {
+    includeBuild("../node_modules/@react-native/gradle-plugin")
+}
+
+plugins {
+    id("com.facebook.react.settings")
+}
+
+extensions.configure(com.facebook.react.ReactSettingsExtension) { ex ->
+    ex.autolinkLibrariesFromCommand()
+}
+
+rootProject.name = 'VitalTrack'
+include ':app'
+includeBuild('../node_modules/@react-native/gradle-plugin')
+include ':react-native-reanimated'
+project(':react-native-reanimated').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-reanimated/android')
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://api.mapbox.com/downloads/v2/releases/maven'
+            authentication {
+                basic(BasicAuthentication)
+            }
+            credentials {
+                username = 'mapbox'
+                password = 'sk.eyJ1IjoiYnVpcXVhbmdodXkiLCJhIjoiY20yeDVicWVvMDFuYjJpczhkMnU0dmY1aiJ9.ixhdUrd9L8ORwfZya6DaQg'
+            }
+        }
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    }
+}
+
+

@@ -1,0 +1,4 @@
+<resources>
+    <!-- Các màu khác -->
+    <color name="notification_color">#FF0000</color> <!-- Màu đỏ -->
+</resources>
